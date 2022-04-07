@@ -9,10 +9,6 @@ module.exports = {
         const user = await User.findByPk(user_id, {
             include: { 
                 association: 'techs', 
-                attributes: ['name'], 
-                through: { 
-                    attributes: []
-                }
             }
         })
 
